@@ -1,0 +1,12 @@
+<h1>プラン一覧</h1>
+<div>
+  <% @plans.each do |plan| %>
+    <%= image_tag plan.plan_image %>
+    <%= plan.title %>
+    <%= plan.prefecture %>
+    <%= plan.stay_days %>
+    <%= plan.budget %>
+    <%= plan.main_vehicle %>
+    <%= plan.impression %>
+  <% end %>
+</div>
